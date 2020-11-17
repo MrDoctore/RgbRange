@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles/style.css"/>
+  
+  <title>RGB - Range</title>
+</head>
+<body id="body">
+
+  <div class="content">
+    <h1>RGB - Range</h1>
+    <div class="flex-row">
+      <span class="labelR">(R) Red</span>
+      <input id="inputRangeRed" class="rangeRed" value="255" min="0" max="255" type="range" />
+      <input id="inputTextRed" class="text" value="255" type="text" disabled />
+    </div>
+    <div class="flex-row">
+      <span class="labelG">(G) Green</span>
+      <input id="inputRangeGreen" class="rangeGreen" value="255" min="0" max="255" type="range" />
+      <input id="inputTextGreen" class="text" value="255" type="text" disabled />
+    </div>
+    <div class="flex-row">
+      <span class="labelB">(B) Blue</span>
+      <input id="inputRangeBlue" class="range" value="255" min="0" max="255" type="range" />
+      <input id="inputTextBlue" class="text" value="255" type="text" disabled />
+    </div>
+    <div class="result">
+      <div id="divRgb">
+        <span>RGB</span>
+        <input id="inputTextRgb" class="textRgb" value="255, 255, 255" type="text" readonly />
+        <button id="copyRgb" class="btnCopy" onClick="copy(this.id)">
+          Copy ⧉
+        </button>
+      </div>
+      <div id="divHexa">
+        <span>HEXA</span>
+        <input id="inputTextHexa" class="textHexa" value="#ffffff" type="text" readonly />
+        <button id="copyHexa" class="btnCopy" onClick="copy(this.id)">
+          Copy ⧉
+        </button>
+      </div>
+    </div>
+    <div id="message" class="message">
+      <input type="text" id="mensagem" value="" />
+    </div>
+  </div>
+  
+  <script src="scripts/script.js"></script>
+</body>
+</html>
